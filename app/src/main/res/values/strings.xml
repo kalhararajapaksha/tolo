@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">tolo1</string>
+    <string name="signin">Sign In</string>
+    <string name="todo">TODO</string>
+    <string name="continue_with_google">Continue With Google</string>
+    <string name="tolo">TOLO</string>
+    <string name="signup">Sign Up</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="password">Password</string>
+    <string name="i_agree_to_the_terms_and_conditons">I agree to the terms and conditons</string>
+    <string name="next">Next</string>
+    <string name="or">Or</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="remember_me">Remember me</string>
+</resources>

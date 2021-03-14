@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+   >
+
+
+    <TextView
+        android:id="@+id/tolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/bauh93"
+        android:gravity="center"
+        android:letterSpacing="0.08"
+        android:shadowColor="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="@string/tolo"
+        android:textColor="@color/white"
+        android:textSize="100dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signin"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tolo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/homesignbtn"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:paddingBottom="5dp"
+
+        android:text="@string/signin"
+        android:textColor="@color/teal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/signuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_gravity="left"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="195dp"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="184dp"
+        android:layout_toRightOf="@id/signuptxt"
+        android:backgroundTint="#0000"
+        android:text="@string/signup"
+        android:textColor="@color/lblue"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
