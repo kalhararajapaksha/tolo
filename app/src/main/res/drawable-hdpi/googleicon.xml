@@ -3,11 +3,12 @@
 
     <item
         android:drawable="@drawable/ggogle_icon"
-        android:width="40dp"
-        android:height="40dp"
-        android:left="20dp"
+        android:width="30dp"
+        android:height="30dp"
+       android:start="20dp"
         android:bottom="10dp"
         android:right="-35dp"
+
         />
 
 
