@@ -12,32 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="71dp"
         android:layout_marginLeft="71dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/todo"
         android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/or"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signinbtn"
-        app:srcCompat="@drawable/signline"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginBottom="552dp"
-        android:contentDescription="@string/todo"
-        android:duplicateParentState="false"
-        android:filterTouchesWhenObscured="true"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/signuphead"
-        app:srcCompat="@drawable/circles_sign" />
+        app:srcCompat="@drawable/signline" />
 
     <TextView
         android:id="@+id/signuphead"
@@ -45,31 +31,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
         android:layout_marginLeft="42dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginRight="104dp"
-        android:layout_marginBottom="573dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginRight="262dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/signin"
         android:textAllCaps="true"
         android:textColor="@color/teal"
         android:textColorLink="#4AA694"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="41dp"
         android:layout_height="35dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="55dp"
-        android:background="@color/white"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="32dp"
+        android:background="#0000"
         android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/signuphead"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
@@ -77,11 +63,13 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="368dp"
+        android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="29dp"
         android:autofillHints=""
         android:background="@drawable/round_input"
         android:ems="10"
@@ -91,19 +79,23 @@
         android:paddingStart="30dp"
         android:paddingLeft="30dp"
         android:paddingTop="6dp"
+        android:paddingEnd="20dp"
         android:paddingRight="20dp"
         android:textColorHint="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:paddingEnd="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/signuphead" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="368dp"
+        android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:autofillHints=""
         android:background="@drawable/round_input"
         android:ems="10"
@@ -113,11 +105,12 @@
         android:paddingStart="30dp"
         android:paddingLeft="30dp"
         android:paddingTop="6dp"
+        android:paddingEnd="20dp"
         android:paddingRight="20dp"
         android:textColorHint="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        android:paddingEnd="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -125,7 +118,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:fontFamily="sans-serif"
         android:includeFontPadding="true"
         android:text="@string/remember_me"
@@ -135,11 +128,13 @@
 
     <Button
         android:id="@+id/signinbtn"
-        android:layout_width="392dp"
+        android:layout_width="360dp"
         android:layout_height="63dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/signbtn"
         android:gravity="center_horizontal"
         android:paddingTop="12dp"
@@ -151,6 +146,7 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/lblut_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -170,11 +166,13 @@
 
     <Button
         android:id="@+id/gsigninbutton"
-        android:layout_width="392dp"
+        android:layout_width="360dp"
         android:layout_height="63dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/signbtn"
         android:drawableLeft="@drawable/googleicon"
         android:gravity="center_horizontal"
@@ -187,9 +185,9 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/lblut_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        android:drawableStart="@drawable/googleicon" />
+        app:layout_constraintTop_toBottomOf="@+id/or" />
 
     <TextView
         android:id="@+id/dontacc"
@@ -197,7 +195,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="97dp"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="27dp"
@@ -205,9 +202,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signupbtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gsigninbutton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/signupbtn"
@@ -216,10 +211,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="73dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#0000"
         android:text="@string/signup"
         android:textColor="@color/lblue"
@@ -229,7 +224,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dontacc"
         app:layout_constraintTop_toBottomOf="@+id/gsigninbutton"
-        app:layout_constraintVertical_bias="0.0"
         tools:targetApi="lollipop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

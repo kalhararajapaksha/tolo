@@ -8,7 +8,6 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     private androidx.appcompat.widget.AppCompatButton signin;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
