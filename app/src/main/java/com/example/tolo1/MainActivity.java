@@ -15,25 +15,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        signin=(androidx.appcompat.widget.AppCompatButton) findViewById(R.id.signin);
-        signupbtn =(Button) findViewById(R.id.signupbtn);
-        signin.setOnClickListener(new View.OnClickListener(){
+        signin = (androidx.appcompat.widget.AppCompatButton) findViewById(R.id.signin);
+        signupbtn = (Button) findViewById(R.id.signupbtn);
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                Intent i = new Intent(MainActivity.this,signin.class);
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, signin.class);
                 startActivity(i);
                 finish();
             }
         });
-        signupbtn.setOnClickListener(new View.OnClickListener(){
+        signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                Intent i = new Intent(MainActivity.this,signup.class);
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, signup.class);
                 startActivity(i);
             }
         });
 
-
+    }
 }

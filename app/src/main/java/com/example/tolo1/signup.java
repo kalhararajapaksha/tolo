@@ -41,7 +41,7 @@ public class signup extends AppCompatActivity {
             public void onClick(View v) {
                 String username = username1.getText().toString();
                 String password = password1.getText().toString();
-                if ((username.isEmpty()){
+                if ((username.isEmpty())){
                     username1.setError("Please enter Username");
                     username1.requestFocus();
                 }
@@ -50,24 +50,24 @@ public class signup extends AppCompatActivity {
                     password1.requestFocus();
                 }
                 else if(username.isEmpty() && password.isEmpty()) {
-                    Toast.makeText(signin.this, "Fields are Empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this, "Fields are Empty!", Toast.LENGTH_SHORT).show();
                 }
                 else if(!(username.isEmpty() && password.isEmpty())) {
-                    mfirebaseAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(signin.this, new OnCompleteListener<AuthResult>() {
+                    mfirebaseAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(signup.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(!task.isSuccessful()) {
-                                Toast.makeText(signin.this, "SignIn Unsusseccfull!, PleaseTryAgain", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(signup.this, "SignIn Unsusseccfull!, PleaseTryAgain", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                startActivity(new Intent(signin.this,MainActivity.class));
+                                startActivity(new Intent(signup.this,MainActivity.class));
                             }
 
                         }
                     });
                 }
                 else{
-                    Toast.makeText(signin.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
                 }
 
             }

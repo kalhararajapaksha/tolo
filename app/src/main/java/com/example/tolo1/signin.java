@@ -42,7 +42,7 @@ public class signin extends AppCompatActivity {
             public void onClick(View v) {
                 String username = username1.getText().toString();
                 String password = password1.getText().toString();
-                if ((username.isEmpty()){
+                if ((username.isEmpty())){
                     username1.setError("Please enter Username");
                     username1.requestFocus();
                 }
@@ -73,10 +73,5 @@ public class signin extends AppCompatActivity {
 
             }
         });
-    }
-
-
-
-
     }
 }
