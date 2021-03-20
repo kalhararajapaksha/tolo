@@ -1,77 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/bg"
-   >
+    >
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="486dp"
+        android:layout_height="794dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        android:contentDescription="@string/to" />
 
-    <TextView
-        android:id="@+id/tolo"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:fontFamily="@font/bauh93"
-        android:gravity="center"
-        android:letterSpacing="0.08"
-        android:shadowColor="@color/white"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="10"
-        android:text="@string/tolo"
-        android:textColor="@color/white"
-        android:textSize="100sp"
-        tools:targetApi="lollipop" />
+        android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signin"
-        android:layout_width="186dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tolo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/homesignbtn"
-        android:elevation="20dp"
-        android:gravity="center"
-        android:includeFontPadding="true"
-        android:paddingBottom="5dp"
+        <TextView
+            android:id="@+id/tolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:fontFamily="@font/bauh93"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="@string/tolo"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            tools:targetApi="lollipop" />
 
-        android:text="@string/signin"
-        android:textColor="@color/teal"
-        android:textSize="20sp"
-        tools:targetApi="lollipop" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signin"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tolo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/homesignbtn"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:paddingBottom="5dp"
+            android:text="@string/signin"
+            android:textColor="@color/teal"
+            android:textSize="20sp"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
 
     <TextView
-        android:id="@+id/signuptxt"
+        android:id="@+id/dontacc"
         android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_below="@+id/signin"
-        android:layout_gravity="start"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/don_t_have_an_account"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
     <Button
         android:id="@+id/signupbtn"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_below="@+id/signin"
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="-1dp"
-        android:layout_marginTop="185dp"
-        android:layout_toEndOf="@id/signuptxt"
-        android:layout_toRightOf="@id/signuptxt"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="#0000"
         android:text="@string/signup"
         android:textColor="@color/lblue"
-        android:textSize="18sp"
+        android:textStyle="bold"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dontacc"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         tools:targetApi="lollipop" />
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
