@@ -9,15 +9,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private androidx.appcompat.widget.AppCompatButton signin;
-    private Button signup;
-
+    private Button signupbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         signin=(androidx.appcompat.widget.AppCompatButton) findViewById(R.id.signin);
-        signup=(Button) findViewById(R.id.signup);
+        signupbtn =(Button) findViewById(R.id.signupbtn);
         signin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        signup.setOnClickListener(new View.OnClickListener(){
+        signupbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
             {
@@ -36,5 +35,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-}
+
 }

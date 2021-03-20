@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tolo1">
-        <activity android:name=".countryselect"></activity>
-        <activity android:name=".signup" />
+        <activity android:name=".signup"></activity>
         <activity android:name=".signin" />
         <activity android:name=".MainActivity">
             <intent-filter>
